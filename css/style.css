@@ -672,24 +672,25 @@ a {
 }
 #header .switch-part3 {
   left: 200%;
-  text-align: left;
-  text-align: justify;
-  font-size: 13px;
-  line-height: 1.7;
-}
-#header .switch-part4 {
-  left: 300%;
   line-height: 30px;
 }
-#header .switch-part4 .switch-friends-link {
+#header .switch-part3 .switch-friends-link {
+  text-decoration: underline;
   margin-right: 9px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
   padding: 5px;
 }
-#header .switch-part4 .switch-friends-link:hover {
+#header .switch-part3 .switch-friends-link:hover {
   background: #88acdb;
   color: #fff;
+}
+#header .switch-part4 {
+  left: 300%;
+  text-align: left;
+  text-align: justify;
+  font-size: 13px;
+  line-height: 1.7;
 }
 .duoshuo {
   padding: 0 40px;
