@@ -1060,7 +1060,7 @@ a {
   font-size: 12px;
 }
 .article-meta .article-tag-list .article-tag-list-item .article-tag-list-link:hover {
-  color: #666;
+  color: #d82654;
 }
 .article-meta .article-tag-list:after {
   content: "";
@@ -1070,6 +1070,7 @@ a {
 .article-meta .article-category {
   text-align: left;
   vertical-align: middle;
+  margin-bottom: 10px;
   zoom: 1;
   height: 20px;
   color: #999;
@@ -1096,11 +1097,14 @@ a {
   line-height: 14px;
   font-size: 12px;
 }
+.article-meta .article-category-link:hover {
+  color: #d82654;
+}
 .article-more-link a {
-  background: #4d4d4d;
+  background: #179dae;
   color: #fff;
   margin: 0 15px 0 0;
-  padding: 4px 8px;
+  padding: 8px 20px;
   line-height: 16px;
   -webkit-border-radius: 2px;
   -moz-border-radius: 2px;
@@ -1386,7 +1390,7 @@ a {
   text-decoration: underline;
 }
 pre .comment {
-  color: #666;
+  color: #bababa;
 }
 pre .title {
   color: #a6e22e;

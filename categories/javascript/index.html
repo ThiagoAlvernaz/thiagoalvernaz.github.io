@@ -3,24 +3,17 @@
 <head>
   <meta charset="utf-8">
   
-  <title>My first post - Criando um blog com Hexo | Thiago Alvernaz</title>
+  <title>Category: javascript | Thiago Alvernaz</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Olá, sejam bem-vindos ao meu blog :)
-
-Antes de começar a explicar como criar um blog com Hexo, quero falar um pouco de mim. Sou mineiro, tenho 20 anos e amo programação, meu objetivo em criar o blog é">
-<meta property="og:type" content="article">
-<meta property="og:title" content="My first post - Criando um blog com Hexo">
-<meta property="og:url" content="http://thiagoalvernaz.github.io/2015/01/17/hello-world/">
+  <meta name="description">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Thiago Alvernaz">
+<meta property="og:url" content="http://thiagoalvernaz.github.io/categories/javascript/">
 <meta property="og:site_name" content="Thiago Alvernaz">
-<meta property="og:description" content="Olá, sejam bem-vindos ao meu blog :)
-
-Antes de começar a explicar como criar um blog com Hexo, quero falar um pouco de mim. Sou mineiro, tenho 20 anos e amo programação, meu objetivo em criar o blog é">
-<meta property="og:image" content="https://copy.com/thumbs_public/bCUcz3wVygwj1fna/hexo.jpg?size=1024">
+<meta property="og:description">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="My first post - Criando um blog com Hexo">
-<meta name="twitter:description" content="Olá, sejam bem-vindos ao meu blog :)
-
-Antes de começar a explicar como criar um blog com Hexo, quero falar um pouco de mim. Sou mineiro, tenho 20 anos e amo programação, meu objetivo em criar o blog é">
+<meta name="twitter:title" content="Thiago Alvernaz">
+<meta name="twitter:description">
 
   
   
@@ -185,7 +178,9 @@ Antes de começar a explicar como criar um blog com Hexo, quero falar um pouco d
 		</header>				
 	</div>
 </nav>
-      <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+      
+  
+    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
       <a href="/2015/01/17/hello-world/" class="article-date">
@@ -209,8 +204,8 @@ Antes de começar a explicar como criar um blog com Hexo, quero falar um pouco d
       <header class="article-header">
         
   
-    <h1 class="article-title" itemprop="name">
-      My first post - Criando um blog com Hexo
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/17/hello-world/">My first post - Criando um blog com Hexo</a>
     </h1>
   
 
@@ -238,87 +233,23 @@ Antes de começar a explicar como criar um blog com Hexo, quero falar um pouco d
 </code></pre><h3 id="Configurações">Configurações</h3>
 <p>As configurações básicas fica no arquivo <code>_config.yml</code> onde você pode alterar url, title, author, per_page (quantidades de post por página), theme, etc, não tem segredo, basta acessa o arquivo e alterar de acordo com suas configurações. Se quiser consultar cada configuração basta acesse o <a href="http://hexo.io/docs/configuration.html" target="_blank" rel="external">link</a>.</p>
 <h3 id="Alterando_Tema">Alterando Tema</h3>
-<a id="more"></a> 
 
-<p>Você encontra uma lista de temas prontos no link <a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank" rel="external">Hexo - Themes</a>, para instalar o tema basta dar um <code>git clone</code> no tema escolhido. Exemplo:</p>
-<pre><code><span class="input"><span class="prompt">git clone &lt;repository&gt;</span> themes/&lt;theme-name&gt;</span>
-</code></pre><p>Eu uso o tema yilia mas fiz a tradução e alterei um pouco o layout, você encontrar o tema em original em <a href="https://github.com/litten/hexo-theme-yilia" target="_blank" rel="external">hexo-theme-yilia</a>  minha versão está disponível em <a href="https://github.com/ThiagoAlvernaz/hexo-theme-yilia-br" target="_blank" rel="external">hexo-theme-yilia-br</a>.</p>
-<p>Após instalar você deve configurar o arquivo  <code>_config.yml</code> alterando o nome do tema, você também encontrar um arquivo  <code>_config.yml</code> na pasta onde o tema foi instalado, onde pode configurar de acordo com seu tema, na maioria das vezes alterar os link das redes sociais, comentários, favicon, etc.</p>
-<h3 id="My_first_post">My first post</h3>
-<p>Para criar um post basta digitar no terminal o comando:</p>
-<pre><code>hexo <span class="keyword">new</span> <span class="string">"My first post"</span>
-</code></pre><p>Após o comando será criado um arquivo <code>my-first-post.md</code> no diretório <code>source/_posts/</code>onde você irá começar a escrever seu post, dentro desse arquivo você terá um código já gerado pelo comando:</p>
-<pre><code>title: Meu novo post
-date: 2014-01-05 20:53:29
-<span class="header">tags:
----</span>
-</code></pre><p>você irá criar seu post após - - - no formato Markdown, se não conhece sobre Markdown basta acessa <a href="https://help.github.com/articles/markdown-basics/" target="_blank" rel="external">Markdown Basics</a>, para o meu auxílio uso o site <a href="https://stackedit.io" target="_blank" rel="external">stackedit.io</a>, você também pode instalar em seu blog o <a href="http://jaredly.github.io/hexo-admin/" target="_blank" rel="external">Hexo Admin Plugin</a> para agilizar e facilitar a criação ou alterações dos post.</p>
-<p>Para usar Hexo Admin Plugin basta executar:</p>
-<pre><code>npm <span class="operator"><span class="keyword">install</span> <span class="comment">--save hexo-admin</span>
-hexo <span class="keyword">server</span> -d
-<span class="keyword">open</span> http://localhost:<span class="number">4000</span>/admin/</span>
-</code></pre><h3 id="Generate_e_Deploy_com_GitHub_Pages">Generate e Deploy com GitHub Pages</h3>
-<p>Agora que você já criou seu blog, escolheu um layout e fez sua primeira publicação, está na hora de gerar seu blog e colocar ele no github pages, vamos por partes ok, primeiro o generate.</p>
-<p>Para gerar os arquivos estáticos basta executar o comando:</p>
-<pre><code>hexo <span class="keyword">generate</span>
-</code></pre><p>Será criando uma pasta <code>public</code>com todos os arquivos, esses arquivos serão enviados para o github pages, agora vamos para a parte do deploy.</p>
-<blockquote>
-<p>O Github disponibiliza um subdomínio para você usar com o nome de usuário, no meu caso <a href="thiagoalvernaz.github.io">thiagoalvernaz.github.io</a>, para você fazer o mesmo deve criar um repositório com o nome seu_username.github.io</p>
-</blockquote>
-<p>Com o repositório criado acesse o arquivo <code>_config.yml</code> na raiz do blog, ao final do arquivo você encontra o seguindo código:</p>
-<pre><code><span class="preprocessor"># Deployment</span>
-<span class="preprocessor">## Docs: http://hexo.io/docs/deployment.html</span>
-<span class="title">deploy</span>:
-  <span class="typedef"><span class="keyword">type</span>:</span>
-</code></pre><p>basta alterar e deixar assim:</p>
-<pre><code><span class="preprocessor"># Deployment</span>
-<span class="preprocessor">## Docs: http://hexo.io/docs/deployment.html</span>
-<span class="title">deploy</span>:
-  <span class="typedef"><span class="keyword">type</span>: github</span>
-  repo: &lt;seu-repositorio&gt;
-  branch: master
-  message: 
-</code></pre><p>Execute o comando:</p>
-<pre><code><span class="title">hexo</span> deploy
-</code></pre><p>Ele vai pedir o seu e-mail do github e sua senha após preencher aguarde alguns minutos e acesse seu seu_username.github.io e verá seu blog publicado ;).</p>
-<p>lembrando que sempre que criar um novo post deve ser executar o comando <code>hexo generate</code> logo após <code>hexo deploy</code> o comando <code>deploy</code> criar um pasta chamada .deploy onde fica os arquivos enviado para o github toda vez que executar o comando ele atualiza a pasta e envia somente as alterações para o github.</p>
-
+        
+          <p class="article-more-link">
+            <a href="/2015/01/17/hello-world/#more">Continue lendo >></a>
+          </p>
+        
       
     </div>
   </div>
   
-    
-  
 </article>
 
 
-<div class="share">
-		<span class="share_txt">Share this post：</span>
-
-        <a onclick="window.open(this.href, 'facebook-share', 'width=550,height=400');return false;" href="https://www.facebook.com/sharer/sharer.php?u=http://thiagoalvernaz.github.io//2015/01/17/hello-world/"><i class="fa fa-facebook-square"></i></a>
-
-        <a onclick="window.open(this.href, 'google-share', 'width=550,height=400');return false;" href="https://plus.google.com/share?url=http://thiagoalvernaz.github.io//2015/01/17/hello-world/"><i class="fa fa-google-plus-square"></i></a>
-
-        <a onclick="window.open(this.href, 'twitter-share', 'width=550,height=400');return false;" href="http://twitter.com/share?url=http://thiagoalvernaz.github.io//2015/01/17/hello-world/"><i class="fa fa-twitter-square"></i></a>
-</div>
 
 
-
-<section id="comments">
-  <div id="disqus_thread"></div>
-    <script type="text/javascript">
-    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
-    var disqus_shortname = 'thiagoalvernaz'; // required: replace example with your forum shortname
-
-    /* * * DON'T EDIT BELOW THIS LINE * * */
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</section>
+  
+  
 
       <footer id="footer">
   <div class="outer">
