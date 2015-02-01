@@ -111,7 +111,7 @@
 				
 				<section class="switch-part switch-part2">
 					<div class="widget tagcloud">
-						<a href="/tags/blog/" style="font-size: NaNpx;">blog</a><a href="/tags/hexo/" style="font-size: NaNpx;">hexo</a><a href="/tags/nodejs/" style="font-size: NaNpx;">nodejs</a>
+						<a href="/tags/angular-gettext/" style="font-size: NaNpx;">angular-gettext</a><a href="/tags/angularjs/" style="font-size: NaNpx;">angularjs</a><a href="/tags/blog/" style="font-size: NaNpx;">blog</a><a href="/tags/hexo/" style="font-size: NaNpx;">hexo</a><a href="/tags/nodejs/" style="font-size: NaNpx;">nodejs</a>
 					</div>
 				</section>
 				
@@ -179,6 +179,85 @@
 	</div>
 </nav>
       
+  
+    <article id="post-Multi-language-com-angular-gettext" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/01/30/Multi-language-com-angular-gettext/" class="article-date">
+  	<time datetime="2015-01-31T00:35:00.000Z" itemprop="datePublished">jan 30 2015</time>
+</a>
+      
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/javascript/">javascript</a>
+  </div>
+
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/angular-gettext/">angular-gettext</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/angularjs/">angularjs</a></li></ul>
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/01/30/Multi-language-com-angular-gettext/">Multi language com angular-gettext</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Vamos aprender uma forma simples de traduzir seu site ou app com <a href="https://angular-gettext.rocketeer.be/" target="_blank" rel="external">angular-gettext</a>, estou usando ele a cerca de 4 meses no projeto que trabalho, até o momento ele atende todas as necessidades.</p>
+<p><img src="https://copy.com/thumbs_public/CaWbq6eJGv4CzRjY/angular-gettext.jpg?size=1024" alt="angular-gettext tutorial"></p>
+<h3 id="Criando_um_ambiente_-_Start">Criando um ambiente - Start</h3>
+<p>Vamos instalar algumas dependências básicas:</p>
+<pre><code>bower <span class="operator"><span class="keyword">install</span> angular</span>
+</code></pre><p>E agora o projeto angular-gettext</p>
+<pre><code>bower <span class="operator"><span class="keyword">install</span> angular-gettext</span>
+</code></pre><p>Agora você precisar criar um arquivo <code>index.html</code> em sua pasta, e inserir as dependências e já criar os atributos ng-app e ng-controller, seu código deve ficar assim:</p>
+<pre><code><span class="doctype">&lt;!DOCTYPE html&gt;</span>
+<span class="tag">&lt;<span class="title">html</span> <span class="attribute">ng-app</span>=<span class="value">"app-traducao"</span> <span class="attribute">lang</span>=<span class="value">"pt-br"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">head</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">meta</span> <span class="attribute">charset</span>=<span class="value">"UTF-8"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">title</span>&gt;</span>angular-gettext-exemplo<span class="tag">&lt;/<span class="title">title</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">head</span>&gt;</span>
+<span class="tag">&lt;<span class="title">body</span> <span class="attribute">ng-controller</span>=<span class="value">"Traducao"</span>&gt;</span>
+
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">translate</span>&gt;</span>My first translation<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+
+  <span class="comment">&lt;!-- scripts --&gt;</span>
+  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"bower_components/angular/angular.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"bower_components/angular-gettext/dist/angular-gettext.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"app-traducao.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
+
+<span class="tag">&lt;/<span class="title">body</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">html</span>&gt;</span>
+</code></pre><p>Conforme o código acima você deve criar um arquivo chamado <code>app-traducao.js</code>.</p>
+<blockquote>
+<p>Veja no arquivo temos o atributo <code>translate</code> no qual é uma directive que irá fazer nossa tradução.</p>
+</blockquote>
+<h3 id="Configurando_o_seu_app">Configurando o seu app</h3>
+
+        
+          <p class="article-more-link">
+            <a href="/2015/01/30/Multi-language-com-angular-gettext/#more">Continue lendo >></a>
+          </p>
+        
+      
+    </div>
+  </div>
+  
+</article>
+
+
+
+
   
     <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
   
